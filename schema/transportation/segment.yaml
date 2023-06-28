@@ -301,6 +301,19 @@ properties:
         edge-to-edge width of the sidewalk. (3) If this segment models a
         combined sidewalk and carriageway, this value represents the
         edge-to-edge width inclusive of sidewalk.
+      oneOf:
+        - { "$ref": "#/$defs/propertyDefinitions/roadWidthValue" }
+        - type: array
+          items:
+            type: object
+            allOf:
+              - { "$ref": "#/$defs/propertyContainers/atRangeContainer" }
+            unevaluatedProperties: false
+            properties:
+              value: { "$ref": "#/$defs/propertyDefinitions/roadWidthValue" }
+          minItems: 1
+          uniqueItems: true
+    roadWidthValue:
       type: number
       exclusiveMinimum: 0
     speed:
