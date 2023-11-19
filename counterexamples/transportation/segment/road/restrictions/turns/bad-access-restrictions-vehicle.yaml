@@ -22,5 +22,5 @@ properties:
     flags: [isLink, isTunnel, isPrivate]
     restrictions:
       access:
-        - allowed:
-            when: {vehicle: {axleCount: {isFoo: 5}}}
+        - accessType: allowed
+          when: {vehicle: {axleCount: {isFoo: 5}}}

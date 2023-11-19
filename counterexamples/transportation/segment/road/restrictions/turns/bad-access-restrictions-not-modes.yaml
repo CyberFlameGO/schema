@@ -22,5 +22,5 @@ properties:
     flags: [isLink, isTunnel, isPrivate]
     restrictions:
       access:
-        - allowed:
-            when: {modeNot: [foo]}
+        - accessType: allowed
+          when: {modeNot: [foo]}
