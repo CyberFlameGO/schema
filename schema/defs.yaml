@@ -16,12 +16,13 @@ description: Common schema definitions shared by all themes
       type: string
       enum:
         - administrative_boundary
-        - locality_area
         - building
         - connector
+        - infrastructure
         - land
         - land_use
         - locality
+        - locality_area
         - part
         - place
         - segment
